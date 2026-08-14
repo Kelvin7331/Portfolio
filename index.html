@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta -->
+  <title>Kelvin Mwichwiri | Web Developer & IT Specialist</title>
+  <meta name="description" content="Portfolio of Kelvin Mwichwiri — Web Developer, Tech Enthuasist, Network Engineer & IT Specialist based in Maua, Meru, Kenya. Founder of Kelvinet Technologies.">
+  <meta name="author" content="Kelvin Mwichwiri">
+  <meta name="keywords" content="web developer, tech enthuasist, IT specialist, network engineer, Kelvinet Technologies, Kenya, full stack, portfolio">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kelvin Mwichwiri | Web Developer & IT Specialist">
+  <meta property="og:description" content="Building scalable web applications and robust IT infrastructure. Based in Maua, Kenya.">
+  <meta property="og:image" content="Kelvin-1.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.jpg">
+
+  <!-- Fonts (preconnect first for perf) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════  NAVBAR  ═══════════ -->
+<header>
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <a href="#home" class="logo-link" aria-label="Kelvin Mwichwiri — Home">
+        <img src="img/logo.jpg" alt="" class="logo" aria-hidden="true">
+        <span class="logo-text">KELVIN<em>.M</em></span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#home" class="nav-link active"><i class="fas fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="#about" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fas fa-bolt" aria-hidden="true"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fas fa-layer-group" aria-hidden="true"></i> Projects</a></li>
+        <li><a href="#services" class="nav-link"><i class="fas fa-briefcase" aria-hidden="true"></i> Services</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fas fa-paper-plane" aria-hidden="true"></i> Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </nav>
+</header>
+
+<!-- ═══════════  HERO SECTION  ═════════════ -->
+<section id="home" class="hero" aria-labelledby="hero-heading">
+
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-eyebrow" aria-hidden="true">Based in Maua, Kenya</span>
+
+      <h1 class="hero-title" id="hero-heading">
+        Hello, I'm
+        <span class="name-accent">Kelvin Mwichwiri</span>
+      </h1>
+
+      <p class="hero-roles">
+        <strong>Web Developer</strong> &nbsp;&#8226;&nbsp; Network Engineer &nbsp;&#8226;&nbsp; IT Specialist
+      </p>
+
+      <p class="hero-desc">
+        I craft intuitive, scalable digital solutions that blend elegant design with robust engineering. Founder of <strong>Kelvinet Technologies</strong> — where tech meets impact.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i class="fas fa-layer-group" aria-hidden="true"></i> View Work
+        </a>
+      </div>
+
+      <div class="hero-stats" aria-label="Quick stats">
+        <div class="stat-item">
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20<span>+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5<span>+</span></div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-avatar-wrap" aria-hidden="true">
+      <div class="hero-avatar-ring">
+        <img src="img/Kelvin-hero.png" alt="Kelvin Mwichwiri" class="hero-avatar">
+      </div>
+      <span class="hero-avatar-badge">
+        <i class="fas fa-circle" style="font-size:0.5rem; color:#0aefb5;"></i>
+        <span id="typing-text"></span><span class="cursor">|</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════  ABOUT SECTION  ═══════════ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left: Photo -->
+      <div class="about-left reveal">
+        <div class="about-photo-wrap">
+          <img src="img/Kelvin-about.png" alt="Kelvin Mwichwiri" class="about-photo">
+          <div class="about-photo-accent" aria-hidden="true"></div>
+        </div>
+        <div class="about-quote">
+          <div class="about-quote-name">KELVIN MWICHWIRI GITONGA</div>
+          <p class="about-quote-text">"Deciphering Complexity, Creating Simplicity."</p>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="about-right reveal">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-user" aria-hidden="true"></i> About Me</span>
+          <h2 class="section-title" id="about-heading">Who I Am</h2>
+          <span class="accent-line" aria-hidden="true"></span>
+        </div>
+
+        <p>I am a passionate <strong>Web Developer</strong>, Creative Technologist, and Networking Expert with a strong enthusiasm for building impactful digital experiences. 
+          I specialize in crafting intuitive, scalable solutions that combine aesthetics with seamless functionality.</p>
+
+        <p>Beyond development, I excel in <strong>IT support and networking</strong> — designing reliable, secure infrastructure that enhances business productivity. 
+          My problem-solving mindset, attention to detail, and hands-on approach allow me to troubleshoot technical challenges effectively while staying ahead of emerging tech trends.</p>
+
+        <p>For me, <strong>technology isn't just about coding — it's about impact.</strong> I love solving complex challenges and helping businesses harness the power of digital transformation.</p>
+
+        <p>Let's connect and expore opportunities to innovate and build the future together!</p>
+
+        <div class="about-certs">
+          <h4>Certifications</h4>
+          <div class="cert-tags">
+            <span class="cert-tag">CCNA</span>
+            <span class="cert-tag">HCIA</span>
+            <span class="cert-tag">CCST</span>
+            <span class="cert-tag">CCNP</span>
+            <span class="cert-tag">Google IT Support</span>
+            <span class="cert-tag">CyberSecurity (ongoing)</span>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="my-cv.pdf" download class="btn btn-primary">
+            <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════  SKILLS  ═════════ -->
+<section id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag"><i class="fas fa-bolt" aria-hidden="true"></i> What I Do</span>
+      <h2 class="section-title" id="skills-heading">Technical <span>Skills</span></h2>
+      <span class="accent-line" aria-hidden="true"></span>
+      <p class="section-sub">From full-stack development to enterprise networking — a broad toolkit built through real-world delivery.</p>
+    </div>
+
+    <h3 class="skills-subtitle reveal">⚡ Technical Skills</h3>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-code skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">Web Development</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="95">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Accessibility</span>
+          <span class="skill-tag">Performance</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-network-wired skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">Networking & Security</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="75">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">TCP/IP</span>
+          <span class="skill-tag">Firewalls</span>
+          <span class="skill-tag">VLANs</span>
+          <span class="skill-tag">OSPF / BGP</span>
+          <span class="skill-tag">Wireless LAN</span>
+          <span class="skill-tag">Network Monitoring</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-server skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">IT Support</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="94">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="94"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">System Administration</span>
+          <span class="skill-tag">Help Desk</span>
+          <span class="skill-tag">Windows & Linux</span>
+          <span class="skill-tag">Virtualization</span>
+          <span class="skill-tag">Backup & Recovery</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-database skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">Database Management</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="78">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">IndexedDB</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Schema Design</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-tools skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">Tools & Platforms</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="80">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">SEO Basics</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="skills-subtitle reveal" style="margin-top:3rem;">🌟 Professional Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-handshake skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">Collaboration</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="88">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Teamwork</span>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Adaptability</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon-wrap"><i class="fas fa-lightbulb skill-icon" aria-hidden="true"></i></div>
+        <h3 class="skill-category">Problem-Solving</h3>
+        <div class="skill-progress-wrap">
+          <span style="font-size:0.78rem;color:var(--text-muted);">Proficiency</span>
+          <span class="skill-pct" data-target="85">0%</span>
+        </div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Analytical Thinking</span>
+          <span class="skill-tag">Critical Thinking</span>
+          <span class="skill-tag">Project Management</span>
+          <span class="skill-tag">Documentation</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═════════  PROJECTS  ═════════ -->
+<section id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag"><i class="fas fa-layer-group" aria-hidden="true"></i> Portfolio</span>
+      <h2 class="section-title" id="projects-heading">Featured <span>Projects</span></h2>
+      <span class="accent-line" aria-hidden="true"></span>
+      <p class="section-sub">Selected work showcasing skills in web development, AI integration, and digital product design.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="img/project1.jpg" alt="Kelvinet E-commerce Platform screenshot" class="project-img" loading="lazy">
+          <div class="project-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Kelvinet E-commerce Platform</h3>
+          <p class="project-desc">A scalable online shopping solution featuring AI chatbot support, secure payments, and a seamless user experience with light and dark mode options.</p>
+          <div class="project-links">
+            <a href="https://your-demo-link.com" target="_blank" rel="noopener" class="project-link demo-link">
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+            </a>
+            <a href="https://github.com/Cayvoh254-ke" target="_blank" rel="noopener" class="project-link code-link">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="img/project2.png" alt="e-DocSafe Platform screenshot" class="project-img" loading="lazy">
+          <div class="project-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">e-DocSafe Platform</h3>
+          <p class="project-desc">A secure document management system with online/offline storage (IndexedDB + Firestore), Firebase authentication, and PWA support for seamless access anywhere.</p>
+          <div class="project-links">
+            <a href="https://e-docsafe.web.app" target="_blank" rel="noopener" class="project-link demo-link">
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+            </a>
+            <a href="https://github.com/Cayvoh254-ke" target="_blank" rel="noopener" class="project-link code-link">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="img/project3.png" alt="SmartVendor POS screenshot" class="project-img" loading="lazy">
+          <div class="project-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">SmartVendor POS</h3>
+          <p class="project-desc">An intelligent Point-of-Sale system tailored for retailers, offering real-time sales tracking, inventory management, and insightful analytics.</p>
+          <div class="project-links">
+            <a href="https://your-demo-link.com" target="_blank" rel="noopener" class="project-link demo-link">
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+            </a>
+            <a href="https://github.com/Cayvoh254-ke" target="_blank" rel="noopener" class="project-link code-link">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="img/project4.png" alt="Smart IT Helpdesk Chatbot screenshot" class="project-img" loading="lazy">
+          <div class="project-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Smart IT Helpdesk Chatbot</h3>
+          <p class="project-desc">An AI-powered helpdesk assistant that automates IT support, manages tickets, and provides instant troubleshooting guidance for faster issue resolution.</p>
+          <div class="project-links">
+            <a href="https://your-demo-link.com" target="_blank" rel="noopener" class="project-link demo-link">
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+            </a>
+            <a href="https://github.com/Cayvoh254-ke" target="_blank" rel="noopener" class="project-link code-link">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="img/project.jpeg" alt="Portfolio Website screenshot" class="project-img" loading="lazy">
+          <div class="project-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">This website — a modern, responsive portfolio with clean UI/UX, scroll animations, dark theme, and optimized performance built with pure HTML/CSS/JS.</p>
+          <div class="project-links">
+            <a href="#home" class="project-link demo-link">
+              <i class="fas fa-eye" aria-hidden="true"></i> You're Here
+            </a>
+            <a href="https://github.com/Kelvin7331/portfolio" target="_blank" rel="noopener" class="project-link code-link">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═════════  SERVICES  ═════════ -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag"><i class="fas fa-briefcase" aria-hidden="true"></i> What I Offer</span>
+      <h2 class="section-title" id="services-heading">My <span>Services</span></h2>
+      <span class="accent-line" aria-hidden="true"></span>
+      <p class="section-sub">Reliable tech solutions designed to help you grow, connect, and stay secure.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-icon-box">
+          <i class="fas fa-code service-icon" aria-hidden="true"></i>
+        </div>
+        <h3>Web Development</h3>
+        <p>Custom websites, e-commerce stores, and responsive web apps built with modern technologies for performance and scalability.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon-box">
+          <i class="fas fa-network-wired service-icon" aria-hidden="true"></i>
+        </div>
+        <h3>Networking Solutions</h3>
+        <p>Enterprise network design, Wi-Fi setup, VPNs, and secure LAN/WAN configuration tailored to your business needs.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon-box">
+          <i class="fas fa-headset service-icon" aria-hidden="true"></i>
+        </div>
+        <h3>IT Support & Consultancy</h3>
+        <p>Helpdesk support, troubleshooting, system maintenance, hardware/software installation, cloud setup, and IT training.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon-box">
+          <i class="fas fa-robot service-icon" aria-hidden="true"></i>
+        </div>
+        <h3>AI & Automation</h3>
+        <p>AI-powered chatbots, workflow automation, and smart solutions tailored for businesses and individuals seeking efficiency.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═════════  TESTIMONIALS  ═════════ -->
+<section id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag"><i class="fas fa-quote-left" aria-hidden="true"></i> Social Proof</span>
+      <h2 class="section-title" id="testimonials-heading">Client <span>Testimonials</span></h2>
+      <span class="accent-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">Kelvin is a multifaceted tech innovator with a passion for innovation and a knack for solving complex challenges. He easily adjusts to any given situation or business dynamics. Highly recommended!</p>
+        <div class="client-header">
+          <img src="img/client1.jpg" alt="" class="client-avatar" loading="lazy" aria-hidden="true">
+          <div>
+            <div class="client-name">Ken Mutugi</div>
+            <div class="client-role">IT Manager, MMH</div>
+          </div>
+        </div>
+        <div class="testimonial-footer">
+          <img src="img/Mmh_logo.jpeg" alt="MMH logo" class="company-logo">
+          <div class="rating" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">The e-commerce platform Kelvin developed handles 20K+ daily transactions flawlessly. His attention to security and scalability helped us expand to new markets. Truly a full-stack expert who delivers beyond expectations!</p>
+        <div class="client-header">
+          <img src="img/client2.webp" alt="" class="client-avatar" loading="lazy" aria-hidden="true">
+          <div>
+            <div class="client-name">Lilian Muli</div>
+            <div class="client-role">CEO, Divine Mobiles</div>
+          </div>
+        </div>
+        <div class="testimonial-footer">
+          <img src="img/divinelogo.png" alt="Divine logo" class="company-logo">
+          <div class="rating" aria-label="4.5 out of 5 stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">Working with Kelvin across several projects has been an outstanding experience. Kelvin is highly innovative, always full of forward-thinking ideas, and delivers top-tier technical solutions.</p>
+        <div class="client-header">
+          <img src="img/client3.jpg" alt="" class="client-avatar" loading="lazy" aria-hidden="true">
+          <div>
+            <div class="client-name">Nicholas Mwirigi</div>
+            <div class="client-role">CEO, TekPulse</div>
+          </div>
+        </div>
+        <div class="testimonial-footer">
+          <img src="img/tekpulse.jpg" alt="TekPulse logo" class="company-logo">
+          <div class="rating" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">His contributions to web applications have significantly improved user experience and functionality, driving successful project outcomes. Highly recommended!</p>
+        <div class="client-header">
+          <img src="img/client4.png" alt="" class="client-avatar" loading="lazy" aria-hidden="true">
+          <div>
+            <div class="client-name">Benard Gitonga</div>
+            <div class="client-role">CTO, Kelvinet Technologies</div>
+          </div>
+        </div>
+        <div class="testimonial-footer">
+          <img src="img/project1.jpg" alt="Kelvinet Technologies logo" class="company-logo">
+          <div class="rating" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═════════  CONTACT  ═════════ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get In Touch</span>
+      <h2 class="section-title" id="contact-heading">Let's <span>Collaborate</span></h2>
+      <span class="accent-line" aria-hidden="true"></span>
+      <p class="section-sub">Have a project in mind or need tech expertise? I'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- Left: Direct contacts -->
+      <div class="reveal">
+        <p class="contact-desc">Whether it's a new project, freelance work, or just a tech conversation — my inbox is always open. I typically respond within 24 hours.</p>
+
+        <div class="contact-methods">
+          <a href="tel:+254795064874" class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-method-label">Phone</div>
+              <div class="contact-method-value">+254 795 064 874</div>
+            </div>
+          </a>
+          <a href="https://wa.me/254795064874" target="_blank" rel="noopener" class="contact-method">
+            <div class="contact-method-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-method-label">WhatsApp</div>
+              <div class="contact-method-value">+254 795 064 874</div>
+            </div>
+          </a>
+          <a href="mailto:kelvinmwichwiri1@gmail.com" class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-method-label">Email</div>
+              <div class="contact-method-value">kelvinmwichwiri1@gmail.com</div>
+            </div>
+          </a>
+        </div>
+
+        <p class="contact-social-label">Find me on</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/itz.qevoh" target="_blank" rel="noopener" aria-label="Facebook" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/kelvin-mwichwiri-969296307" target="_blank" rel="noopener" aria-label="LinkedIn" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://github.com/Kelvin-ke" target="_blank" rel="noopener" aria-label="GitHub" class="github"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://x.com/Cay_Voh254" target="_blank" rel="noopener" aria-label="Twitter / X" class="twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/@kelvinettechnologies" target="_blank" rel="noopener" aria-label="YouTube" class="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Quick message form -->
+      <div class="contact-form-panel reveal">
+        <h3>Send a Quick Message</h3>
+
+        <form id="contact-form" name="contact" method="POST" data-netlify="true">
+          
+          <input type="hidden" name="form-name" value="contact">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+             <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Project inquiry, collaboration...">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit" id="contact-submit">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════  FOOTER  ════════ -->
+<footer>
+  <div class="container foot-inner">
+    <p>&copy; <span id="year"></span> <span>Kelvin Mwichwiri</span> · Powered by Purpose.</p>
+    <p>Built with <span class="foot-heart">♥</span> and Technology &nbsp;|&nbsp; Maua, Kenya</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-top" id="back-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ══════════  JAVASCRIPT  ══════════ -->
+<script>
+'use strict';
+
+document.addEventListener("DOMContentLoaded", function () {
+  /* ── Dynamic year ── */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Looping Typing Effect
+  const phrases = [
+    'Available for Hire',
+    'Network Technician',
+    'Open to Projects',
+    'Tech Enthusiast',
+    'Your IT Guy'
+  ];
+
+  let phraseIndex = 0;
+  let charIndex = 0;
+  const typingText = document.getElementById("typing-text");
+
+  function typeEffect() {
+    if (charIndex < phrases[phraseIndex].length) {
+      typingText.innerHTML += phrases[phraseIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeEffect, 50);        // Typing speed
+    } else {
+      setTimeout(eraseEffect, 2000);     // Wait before erasing
+    }
+  }
+
+  function eraseEffect() {
+    if (charIndex > 0) {
+      typingText.innerHTML = phrases[phraseIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(eraseEffect, 30);                         // Erasing speed
+    } else {
+      phraseIndex = (phraseIndex + 1) % phrases.length;    // Move to next phrase
+      setTimeout(typeEffect, 500);                         // Pause before typing new phrase
+    }
+  }
+
+  typeEffect();        // Start the typing animation
+});
+
+/* ── Navbar: hide-on-scroll-down, show-on-scroll-up, glass-on-scroll ── */
+(function () {
+  const navbar = document.getElementById('navbar');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const current = window.scrollY;
+
+    if (current > 80) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    if (current > lastScroll && current > 200) {
+      navbar.classList.add('hidden');
+    } else {
+      navbar.classList.remove('hidden');
+    }
+
+    lastScroll = current <= 0 ? 0 : current;
+  }, { passive: true });
+})();
+
+/* ── Hamburger menu ── */
+(function () {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu   = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', String(!expanded));
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      navMenu.classList.remove('active');
+    }
+  });
+
+  // Close menu when a link is clicked
+  navMenu.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      navMenu.classList.remove('active');
+    });
+  });
+})();
+
+/* ── Active nav link on scroll ── */
+(function () {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = [...navLinks]
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  const onScroll = () => {
+    const scrollY = window.scrollY + 120;
+    sections.forEach((section, i) => {
+      if (scrollY >= section.offsetTop &&
+          scrollY < section.offsetTop + section.offsetHeight) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        navLinks[i].classList.add('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+/* ── Smooth scroll for all # links ── */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+/* ── Scroll-reveal for .reveal elements ── */
+(function () {
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        // Stagger reveals within the same parent
+        const siblings = [...entry.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
+        const idx = siblings.indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, Math.min(idx * 80, 400));
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => io.observe(el));
+})();
+
+/* ── Testimonial reveal ── */
+(function () {
+  const cards = document.querySelectorAll('.testimonial-card');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 100);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  cards.forEach(card => io.observe(card));
+})();
+
+/* ── Skill progress bars & counters ── */
+(function () {
+  const bars = document.querySelectorAll('.skill-bar-fill');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const bar = entry.target;
+      const pct = parseInt(bar.dataset.width, 10);
+      const counter = bar.closest('.skill-card').querySelector('.skill-pct');
+
+      bar.style.width = pct + '%';
+
+      // Animate counter number
+      if (counter) {
+        let current = 0;
+        const duration = 1200;
+        const step = duration / pct;
+        const timer = setInterval(() => {
+          current++;
+          counter.textContent = current + '%';
+          if (current >= pct) clearInterval(timer);
+        }, step);
+      }
+
+      io.unobserve(bar);
+    });
+  }, { threshold: 0.3 });
+  bars.forEach(bar => io.observe(bar));
+})();
+
+/* ── Back to top button ── */
+(function () {
+  const btn = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+/* ── Contact form (Netlify Submission) ──────────────── */
+(function () {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();        // Stop the page reload and Netlify's default redirect
+
+    const name = document.getElementById('contact-name').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
+    const subject = document.getElementById('contact-subject').value.trim();
+    const message = document.getElementById('contact-message').value.trim();
+
+    if (!name || !email || !message) {
+      status.style.color = '#ef4444';
+      status.textContent = 'Please fill in your name, email, and message.';
+      return;
+    }
+
+    // Visual feedback while loading
+    status.style.color = 'var(--text-muted, #888888)';
+    status.textContent = 'Sending your message...';
+
+    // Prepare data structure for Netlify
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then((response) => {
+      if (response.ok) {
+        status.style.color = 'var(--accent)';
+        status.textContent = '✓ Success! Your message has been sent.';
+        form.reset();        // Clear form fields
+
+        // Clear success message after 5 seconds
+        setTimeout(() => status.textContent = '', 5000);
+      } else {
+        throw new Error('Server response error');
+      }
+    })
+    .catch((error) => {
+      status.style.color = '#ef4444';
+      status.textContent = 'Error submitting form. Please try again.';
+      console.error('Netlify Form Error:', error);
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
