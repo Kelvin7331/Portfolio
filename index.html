@@ -921,6 +921,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     // Prepare data structure for Netlify
     const formData = new FormData(form);
+    const searchParams = new URLSearchParams();
+
+    for (const [key, value] of formData.entries()) {
+        searchParams.append(key, value);
+    }
 
     fetch('/', {
       method: 'POST',
