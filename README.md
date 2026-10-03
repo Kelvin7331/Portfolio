@@ -6,11 +6,11 @@
 
 **Full Stack Developer · Network Engineer · IT Specialist**
 
-*Founder, [Kelvinet Technologies](https://kelvinet.co.ke) · Maua, Meru, Kenya*
+*Founder, [Kelvinet Technologies](https://kelvinettechnologies.netlify.app) · Maua, Meru, Kenya*
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-0aefb5?style=for-the-badge&logo=googlechrome&logoColor=000)](https://your-portfolio-link.com)
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-0aefb5?style=for-the-badge&logo=googlechrome&logoColor=000)](https://kelvin7331.github.io/Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kelvin-mwichwiri-969296307)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cayvoh254-ke)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kelvin7331)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kelvinmwichwiri1@gmail.com)
 
 </div>
@@ -45,9 +45,7 @@ A modern, fully responsive **personal portfolio website** built with pure HTML5,
 
 ## 🌐 Live Demo
 
-> **[https://your-portfolio-link.com](https://your-portfolio-link.com)**
-> *(Replace with your actual deployed URL)*
-
+> https://kelvin7331.github.io/Portfolio/
 ---
 
 ## ✨ Features
