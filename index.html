@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kelvin Mwichwiri | Web Developer & IT Specialist">
   <meta property="og:description" content="Building scalable web applications and robust IT infrastructure. Based in Maua, Kenya.">
-  <meta property="og:image" content="Kelvin-1.jpg">
+  <meta property="og:image" content="hero.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/logo.jpg">
@@ -135,7 +135,7 @@
         </div>
         <div class="about-quote">
           <div class="about-quote-name">KELVIN MWICHWIRI GITONGA</div>
-          <p class="about-quote-text">"Deciphering Complexity, Creating Simplicity."</p>
+          <p class="about-quote-text">“Deciphering Complexity, Creating Simplicity.”</p>
         </div>
       </div>
 
@@ -410,7 +410,7 @@
 
       <article class="project-card reveal">
         <div class="project-thumb">
-          <img src="img/project4.png" alt="Kelvinet Smart IT Helpdesk screenshot" class="project-img" loading="lazy">
+          <img src="img/project4.jpg" alt="Kelvinet Smart IT Helpdesk screenshot" class="project-img" loading="lazy">
           <div class="project-overlay" aria-hidden="true"></div>
         </div>
         <div class="project-body">
@@ -576,7 +576,7 @@
           </div>
         </div>
         <div class="testimonial-footer">
-          <img src="img/divinelogo.png" alt="Divine logo" class="company-logo">
+          
           <div class="rating" aria-label="4.5 out of 5 stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -613,14 +613,14 @@
         <span class="quote-mark" aria-hidden="true">"</span>
         <p class="testimonial-text">His contributions to web applications have significantly improved user experience and functionality, driving successful project outcomes. Highly recommended!</p>
         <div class="client-header">
-          <img src="img/client4.png" alt="" class="client-avatar" loading="lazy" aria-hidden="true">
+          <img src="img/client4.jpg" alt="" class="client-avatar" loading="lazy" aria-hidden="true">
           <div>
             <div class="client-name">Benard Gitonga</div>
             <div class="client-role">CTO, Kelvinet Technologies</div>
           </div>
         </div>
         <div class="testimonial-footer">
-          <img src="img/project1.jpg" alt="Kelvinet Technologies logo" class="company-logo">
+          <img src="img/Kelvinet_logo.jpg" alt="Kelvinet Technologies logo" class="company-logo">
           <div class="rating" aria-label="5 out of 5 stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -695,13 +695,13 @@
           <!-- Required by Netlify -->
           <input type="hidden" name="form-name" value="contact">
 
-          <!-- Spam protection -->
-           <p class="hidden-honeypot">
+          <!-- Spam protection (hidden from humans, catches bots) -->
+          <p style="display:none;">
             <label>
               Don't fill this out if you're human:
               <input type="text" name="bot-field">
             </label>
-           </p>-
+          </p>
 
           <div class="form-row">
             <div class="form-group">
@@ -993,26 +993,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     try {
       const response = await fetch('/', {
         method: 'POST',
-        headers: { 
-          'Content-Type': 'application/x-www-form-urlencoded' 
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: new URLSearchParams(formData).toString(),
       });
 
-      if (!response.ok) {
-        throw new Error('Form submission failed');
+      // Netlify returns 200 directly OR a redirect (response.redirected = true)
+      // that fetch follows to a 200 — both count as success.
+      if (response.ok || response.redirected) {
+        status.style.color = 'var(--accent)';
+        status.textContent = '✓ Message sent successfully! I\'ll get back to you within 24 hours.';
+        form.reset();
+      } else {
+        throw new Error('Server responded with status ' + response.status);
       }
-
-      status.style.color = 'var(--accent)';
-      status.textContent = '✓ Message sent successfully. I will get back to you soon.';
-
-      form.reset();        // Clear form fields
 
     } catch (error) {
       console.error('Netlify Form Error:', error);
-
       status.style.color = '#ef4444';
-      status.textContent = 'Unable to send your message. Please try again or contact me directly.';
+      status.textContent = '⚠ Unable to send message. Please email me directly at kelvinmwichwiri1@gmail.com';
     }
 
     submitButton.disabled = false;
